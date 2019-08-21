@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <title>vue轮播组件封装</title>
+</head> <!-- 公共css -->
+
+<body>
+    <div id="index">
+        <!-- 
+                *背景轮播组件 u-swiper by keyu-children 2019-08-21
+                @height:图片高度设置
+                @list:轮播图片来源数组
+                @bg_type:css背景cover||contain
+                @auto_play:是否自动播放默认true
+                @duration:间隔多少秒轮播下一张 默认3秒(:duration="3000")
+                @is_slide是否可以滑动 默认true
+                handleClick:点击小圆点切换事件
+                handleImg:点击图片切换事件
+        -->
+        <u-swiper :height="200" :list="banner" :bg_type="'cover'" :index="current" :auto_play="true" :is_slide="true"
+            :duration="5000" @handleClick="dotOpt" @handleImg="toBanner">
+        </u-swiper>
+    </div>
+    <script type="text/javascript" src="./js/vue.min.js"></script>
+    <script type="text/javascript" src="./js/components.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>

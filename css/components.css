@@ -1,0 +1,136 @@
+/*组件css*/
+
+.go-search-box {
+    /* position: absolute;
+    top:0; */
+    width:calc(100% - 10px);
+    text-align: center;
+    padding:10px 5px;
+    background: #ebebee;
+}
+.search-content input {
+    border:none;
+    height:32px;
+    border-radius: 5px;
+    padding:5px;
+    width:225px;
+    max-width:225px;
+    font-size:14px;
+}
+#go_search {
+    /* width:230px; */
+    padding:8px;
+    /* border-radius: 5px; */
+    /* border:1px solid #ffffff; */
+    background-color:#47a3ff;
+    /* margin:0 auto; */
+    /* position: relative;
+    top:10px; */
+}
+#go_search>span {
+    color:#ffffff;
+    font-size:12px;
+}
+/* .search-content {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+    z-index:999;
+} */
+.u-btn-parimary,.u-btn-success,.u-btn-info,.u-btn-warning,.u-btn-danger {
+    height: 42px;
+    display: inline-block;
+    line-height: 42px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .3s;
+    text-decoration: none;
+    /* margin-top: 20px; */
+}
+.u-btn-parimary {
+    background-color: #409eff;
+}
+.u-btn-success {
+    background-color: #67c23a;
+}
+.u-btn-danger {
+    background-color: #f56c6c;
+}
+
+/*轮播*/
+.u-swiper-box {
+    position: relative;
+}
+.u-swiper-itemcnt {
+    position:absolute;
+    right:10px;
+    bottom:0;
+}
+.u-swiper-item {
+    padding:2px;
+    float:left;
+    text-align:center;
+    
+}
+.u-swiper-item > span {
+    display: inline-block;
+    margin:5px;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background:rgba(0,0,0,.4);
+}
+.u-swiper-item > span.active {
+    background:#ffffff;
+}
+.u-swiper-img >div{
+    opacity: 0;
+    transition:all .7s;
+}
+.u-swiper-img >div.active {
+    opacity: 1;
+    transition:all .7s;
+}
+.u-swiper-box .u-swiper-control {
+    position:absolute;
+    top:0;
+    width:100%;
+}
+.u-swiper-box .u-swiper-control .prev, .u-swiper-box .u-swiper-control .next{
+    position: absolute;
+    top:50% !important;
+    width:50px;
+    font-size:40px;
+    /* border-radius:50%; */
+}
+.u-swiper-box .u-swiper-control .prev {
+    left:0;
+}
+.u-swiper-box .u-swiper-control .next {
+    right:0;
+}
+.u-swiper-box .u-swiper-control .prev:after {
+    content: "\f104"; 
+    position: absolute;
+    top:40%;
+    left:15px;
+    color: #ffffff;
+   
+}
+.u-swiper-box .u-swiper-control .next:after {
+    content: "\f105";
+    position: absolute;
+    top:40%;
+    right:15px;
+    color: #ffffff;
+}
+
+
